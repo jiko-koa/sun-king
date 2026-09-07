@@ -3,264 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sun King Kenya | Solar Power Made Easy</title>
+  <title>Sun King Kenya | Solar Power</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
   <header class="header">
-    <div class="container header-inner">
-      <a href="#" class="logo">
-        <span class="logo-icon">🦁</span>
-        <span class="logo-text">sun king</span>
-      </a>
+    <div class="container">
+      <a href="#" class="logo">🦁 sun king</a>
       <nav class="nav" id="nav">
         <a href="#lanterns">Lanterns</a>
-        <a href="#home-systems">Home Systems</a>
+        <a href="#home">Home Systems</a>
         <a href="#inverters">Inverters</a>
         <a href="#phones">Phones</a>
-        <a href="#easybuy">EasyBuy</a>
       </nav>
-      <a href="#easybuy" class="btn btn-dark btn-sm header-cta">Shop Now</a>
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <a href="#easybuy" class="btn btn-dark">EasyBuy</a>
+      <button class="menu-btn" id="menuBtn">☰</button>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-badge">Trusted by thousands across Kenya</div>
-      <h1>Affordable Solar Power.<br>Pay Daily. Own Forever.</h1>
-      <p>Bright lights. Phone charging. TV. Music. All powered by the sun — with flexible EasyBuy payments.</p>
-      <div class="hero-buttons">
-        <a href="#home-systems" class="btn btn-primary">Shop Home Systems</a>
-        <a href="#lanterns" class="btn btn-secondary">Shop Lanterns</a>
-      </div>
-      <div class="hero-stats">
-        <div><strong>From Ksh 15</strong><span>/day</span></div>
-        <div><strong>EasyBuy</strong><span>Finance</span></div>
-        <div><strong>3-Year</strong><span>Battery Life</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Categories -->
-  <section class="quick-cats">
     <div class="container">
-      <div class="cat-row">
-        <a href="#lanterns" class="cat-item">
-          <span class="cat-emoji">💡</span>
-          <span>Lanterns</span>
-        </a>
-        <a href="#home-systems" class="cat-item">
-          <span class="cat-emoji">🏠</span>
-          <span>Home Systems</span>
-        </a>
-        <a href="#inverters" class="cat-item">
-          <span class="cat-emoji">⚡</span>
-          <span>Inverters</span>
-        </a>
-        <a href="#phones" class="cat-item">
-          <span class="cat-emoji">📱</span>
-          <span>Phones</span>
-        </a>
+      <p class="eyebrow">Trusted across Kenya</p>
+      <h1>Solar Power.<br>Pay Daily. Own It.</h1>
+      <p class="hero-sub">Light • Charge • TV • Music</p>
+      <div class="hero-ctas">
+        <a href="#home" class="btn btn-yellow">Shop Now</a>
+        <a href="#easybuy" class="btn btn-ghost">How EasyBuy Works</a>
       </div>
     </div>
   </section>
 
-  <!-- Solar Lanterns -->
+  <!-- Lanterns -->
   <section class="section" id="lanterns">
     <div class="container">
-      <div class="section-head">
+      <div class="section-title">
         <h2>Solar Lanterns</h2>
         <p>Bright. Portable. Reliable.</p>
       </div>
 
-      <div class="product-grid">
+      <div class="grid-2">
         <!-- Pico Plus -->
-        <div class="card">
-          <div class="card-badge">Best Value</div>
-          <div class="card-img yellow">Pico Plus</div>
-          <div class="card-body">
+        <article class="product">
+          <div class="product-img">
+            <img src="images/pico-plus.webp" alt="Sun King Pico Plus">
+          </div>
+          <div class="product-body">
+            <span class="tag">Best Value</span>
             <h3>Pico Plus</h3>
-            <p class="card-desc">Built-in solar panel • 50 lumens • 72hr runtime</p>
-            <ul class="card-features">
-              <li>3 lighting modes</li>
-              <li>1.4 Wh LiFePO4 battery</li>
-              <li>Water-resistant</li>
-              <li>Multi-use stand</li>
-            </ul>
-            <div class="card-price">
-              <div class="price">Ksh 15 <small>/day</small></div>
-              <div class="down">Ksh 350 down • 315 days</div>
-            </div>
-            <div class="card-actions">
-              <button class="btn btn-primary btn-full">Get Payment Plan</button>
-              <button class="btn btn-outline btn-full">Buy Upfront</button>
+            <p>Built-in solar • 50 lumens • 72hr runtime</p>
+            <div class="price-row">
+              <div>
+                <strong>Ksh 15</strong><span>/day</span>
+                <small>Ksh 350 down</small>
+              </div>
+              <button class="btn btn-yellow btn-sm">Get It</button>
             </div>
           </div>
-        </div>
+        </article>
 
         <!-- Boom -->
-        <div class="card featured">
-          <div class="card-badge hot">Most Popular</div>
-          <div class="card-img yellow">Boom</div>
-          <div class="card-body">
+        <article class="product featured">
+          <div class="product-img">
+            <img src="images/boom.webp" alt="Sun King Boom">
+          </div>
+          <div class="product-body">
+            <span class="tag hot">Most Popular</span>
             <h3>Boom</h3>
-            <p class="card-desc">Light + Music + Radio + Phone Charging</p>
-            <ul class="card-features">
-              <li>250 lumen brightness</li>
-              <li>Bluetooth audio</li>
-              <li>Faster phone charging</li>
-              <li>Detachable stand</li>
-            </ul>
-            <div class="card-price">
-              <div class="price">Ksh 20 <small>/day</small></div>
-              <div class="down">Ksh 450 down • 336 days</div>
-            </div>
-            <div class="card-actions">
-              <button class="btn btn-primary btn-full">Get Payment Plan</button>
-              <button class="btn btn-outline btn-full">Buy Upfront</button>
+            <p>Light + Bluetooth + Radio + Charging</p>
+            <div class="price-row">
+              <div>
+                <strong>Ksh 20</strong><span>/day</span>
+                <small>Ksh 450 down</small>
+              </div>
+              <button class="btn btn-yellow btn-sm">Get It</button>
             </div>
           </div>
-        </div>
+        </article>
+
+        <!-- Pro -->
+        <article class="product">
+          <div class="product-img">
+            <img src="images/pro.webp" alt="Sun King Pro">
+          </div>
+          <div class="product-body">
+            <h3>Pro</h3>
+            <p>Up to 100 hours light • Phone charging</p>
+            <div class="price-row">
+              <div>
+                <strong>Ksh 15</strong><span>/day</span>
+                <small>Ksh 350 down</small>
+              </div>
+              <button class="btn btn-yellow btn-sm">Get It</button>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Home Systems -->
-  <section class="section alt" id="home-systems">
+  <section class="section alt" id="home">
     <div class="container">
-      <div class="section-head">
+      <div class="section-title">
         <h2>Solar Home Systems</h2>
-        <p>Light your home. Power your TV. Charge everything.</p>
+        <p>Light your home. Power your TV.</p>
       </div>
 
-      <!-- Max Lite -->
-      <h3 class="sub-head">HomePlus Max Lite</h3>
-      <div class="product-grid three">
-        <div class="card">
-          <div class="card-img dark">Max Lite</div>
-          <div class="card-body">
-            <h3>Max Lite</h3>
-            <p class="card-desc">1 tube light • Laptop charging • Motion sensor</p>
-            <div class="card-price">
-              <div class="price">Ksh 45 <small>/day</small></div>
-              <div class="down">Ksh 2,000 down • 480 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
+      <div class="grid-2">
+        <!-- HomePlus -->
+        <article class="product">
+          <div class="product-img">
+            <img src="images/homeplus.webp" alt="HomePlus">
           </div>
-        </div>
+          <div class="product-body">
+            <h3>HomePlus</h3>
+            <p>Ultra-affordable lighting + phone charging</p>
+            <button class="btn btn-yellow btn-sm">Shop</button>
+          </div>
+        </article>
 
-        <div class="card">
-          <div class="card-img dark">+ 24" TV</div>
-          <div class="card-body">
-            <h3>Max Lite + 24" HD TV</h3>
-            <p class="card-desc">Full lighting + 24" solar TV</p>
-            <div class="card-price">
-              <div class="price">Ksh 75 <small>/day</small></div>
-              <div class="down">Ksh 6,000 down • 728 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
+        <!-- HomePlus Pro -->
+        <article class="product">
+          <div class="product-img">
+            <img src="images/homeplus-pro.webp" alt="HomePlus Pro">
           </div>
-        </div>
+          <div class="product-body">
+            <h3>HomePlus Pro</h3>
+            <p>4 bright tube lights + charging</p>
+            <button class="btn btn-yellow btn-sm">Shop</button>
+          </div>
+        </article>
 
-        <div class="card">
-          <div class="card-img dark">+ 32" TV</div>
-          <div class="card-body">
-            <h3>Max Lite + 32" HD TV</h3>
-            <p class="card-desc">Full lighting + 32" solar TV</p>
-            <div class="card-price">
-              <div class="price">Ksh 90 <small>/day</small></div>
-              <div class="down">Ksh 7,500 down • 728 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
+        <!-- HomePlus Max -->
+        <article class="product">
+          <div class="product-img">
+            <img src="images/homeplus-max.webp" alt="HomePlus Max">
           </div>
-        </div>
+          <div class="product-body">
+            <h3>HomePlus Max</h3>
+            <p>4 tubes • Laptop charging • Motion sensor</p>
+            <div class="price-row">
+              <div>
+                <strong>From Ksh 45</strong><span>/day</span>
+              </div>
+              <button class="btn btn-yellow btn-sm">Shop</button>
+            </div>
+          </div>
+        </article>
 
-        <div class="card">
-          <div class="card-img dark">+ 43" TV</div>
-          <div class="card-body">
-            <h3>Max Lite + 43" HD TV</h3>
-            <p class="card-desc">Full lighting + 43" solar TV</p>
-            <div class="card-price">
-              <div class="price">Ksh 125 <small>/day</small></div>
-              <div class="down">Ksh 9,500 down • 728 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
+        <!-- HomePlus Max + TV -->
+        <article class="product featured">
+          <div class="product-img">
+            <img src="images/homeplus-max-tv.webp" alt="HomePlus Max + TV">
           </div>
-        </div>
-      </div>
-
-      <!-- Max -->
-      <h3 class="sub-head">HomePlus Max</h3>
-      <div class="product-grid three">
-        <div class="card">
-          <div class="card-img yellow">Max + Radio</div>
-          <div class="card-body">
-            <h3>Max + Radio</h3>
-            <p class="card-desc">4 tube lights • Radio + MP3 • Laptop charging</p>
-            <div class="card-price">
-              <div class="price">Ksh 65 <small>/day</small></div>
-              <div class="down">Ksh 2,800 down • 480 days</div>
+          <div class="product-body">
+            <span class="tag hot">Top Choice</span>
+            <h3>HomePlus Max + TV</h3>
+            <p>Full system + 24″ / 32″ / 43″ HD TV</p>
+            <div class="price-row">
+              <div>
+                <strong>From Ksh 75</strong><span>/day</span>
+              </div>
+              <button class="btn btn-yellow btn-sm">Shop</button>
             </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img yellow">Max + Radio + Torch</div>
-          <div class="card-body">
-            <h3>Max + Radio + Torch</h3>
-            <p class="card-desc">4 tubes • Radio • Torch • Full charging</p>
-            <div class="card-price">
-              <div class="price">Ksh 70 <small>/day</small></div>
-              <div class="down">Ksh 3,000 down • 480 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img yellow">Max + 24" TV</div>
-          <div class="card-body">
-            <h3>Max + 24" HD TV</h3>
-            <p class="card-desc">4 tube lights + 24" solar TV</p>
-            <div class="card-price">
-              <div class="price">Ksh 85 <small>/day</small></div>
-              <div class="down">Ksh 7,000 down • 728 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img yellow">Max + 32" TV</div>
-          <div class="card-body">
-            <h3>Max + 32" HD TV</h3>
-            <p class="card-desc">4 tube lights + 32" solar TV</p>
-            <div class="card-price">
-              <div class="price">Ksh 100 <small>/day</small></div>
-              <div class="down">Ksh 8,000 down • 728 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
-          </div>
-        </div>
-
-        <div class="card featured">
-          <div class="card-badge hot">Top Choice</div>
-          <div class="card-img yellow">Max + 43" TV</div>
-          <div class="card-body">
-            <h3>Max + 43" HD TV</h3>
-            <p class="card-desc">4 tube lights + big 43" solar TV</p>
-            <div class="card-price">
-              <div class="price">Ksh 135 <small>/day</small></div>
-              <div class="down">Ksh 10,000 down • 728 days</div>
-            </div>
-            <button class="btn btn-primary btn-full">Shop Now</button>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -268,48 +180,39 @@
   <!-- Inverters -->
   <section class="section" id="inverters">
     <div class="container">
-      <div class="section-head">
-        <h2>Solar Inverter Systems</h2>
-        <p>Power your whole home or business.</p>
+      <div class="section-title">
+        <h2>Inverter Systems</h2>
+        <p>Power your whole home or business</p>
       </div>
 
-      <div class="product-grid">
-        <div class="card">
-          <div class="card-img yellow">PowerPlay Pro</div>
-          <div class="card-body">
+      <div class="grid-2">
+        <article class="product">
+          <div class="product-img dark-bg">
+            <div class="placeholder-img">⚡ PowerPlay Pro</div>
+          </div>
+          <div class="product-body">
             <h3>PowerPlay Pro</h3>
-            <p class="card-desc">Solar + Grid + Battery. Plug & play.</p>
-            <ul class="card-features">
-              <li>Powers TVs, laptops, lights & more</li>
-              <li>Cheaper than a generator</li>
-              <li>Auto switches to solar when grid fails</li>
-            </ul>
-            <div class="card-price">
-              <div class="price">Ksh 1,320 <small>/week</small></div>
-              <div class="down">Ksh 8,750 down • 78 weeks</div>
-            </div>
-            <div class="card-actions">
-              <button class="btn btn-primary btn-full">Get Payment Plan</button>
-              <button class="btn btn-outline btn-full">Buy Upfront</button>
+            <p>Solar + Grid + Battery • Plug & play</p>
+            <div class="price-row">
+              <div>
+                <strong>Ksh 1,320</strong><span>/week</span>
+                <small>Ksh 8,750 down</small>
+              </div>
+              <button class="btn btn-yellow btn-sm">Get It</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <div class="card-img dark">PowerHub</div>
-          <div class="card-body">
-            <h3>PowerHub</h3>
-            <p class="card-desc">Custom solar inverter for modern homes & businesses.</p>
-            <ul class="card-features">
-              <li>Fully integrated system</li>
-              <li>Powers lights & appliances</li>
-              <li>Tailored to your needs</li>
-            </ul>
-            <div class="card-actions" style="margin-top: auto;">
-              <button class="btn btn-primary btn-full">Enquire Now</button>
-            </div>
+        <article class="product">
+          <div class="product-img dark-bg">
+            <div class="placeholder-img">⚡ PowerHub</div>
           </div>
-        </div>
+          <div class="product-body">
+            <h3>PowerHub</h3>
+            <p>Complete AC solar for home & business</p>
+            <button class="btn btn-yellow btn-sm">Enquire</button>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -317,60 +220,46 @@
   <!-- Phones -->
   <section class="section alt" id="phones">
     <div class="container">
-      <div class="section-head">
+      <div class="section-title">
         <h2>Smartphones</h2>
-        <p>Get connected today. Small deposit. Daily payments.</p>
+        <p>Small deposit. Daily payments.</p>
       </div>
 
-      <div class="product-grid">
-        <div class="card">
-          <div class="card-img dark">EZ 3</div>
-          <div class="card-body">
+      <div class="grid-2">
+        <article class="product">
+          <div class="product-img dark-bg">
+            <div class="placeholder-img">📱 EZ 3</div>
+          </div>
+          <div class="product-body">
             <h3>Sun King EZ 3</h3>
-            <p class="card-desc">For people who get things done</p>
-            <ul class="card-features">
-              <li>13 MP + 5 MP cameras</li>
-              <li>4 GB RAM</li>
-              <li>5000 mAh fast charging</li>
-              <li>64 GB storage</li>
-            </ul>
-            <div class="card-price">
-              <div class="price">From Ksh 55 <small>/day</small></div>
-              <div class="down">Ksh 2,299 deposit</div>
+            <p>13MP • 4GB RAM • 5000mAh • 64GB</p>
+            <div class="price-row">
+              <div>
+                <strong>Ksh 55</strong><span>/day</span>
+                <small>Ksh 2,299 deposit</small>
+              </div>
+              <button class="btn btn-yellow btn-sm">Get It</button>
             </div>
-            <button class="btn btn-primary btn-full">Discover EZ 3</button>
           </div>
-        </div>
+        </article>
 
-        <div class="card featured">
-          <div class="card-badge hot">Best Specs</div>
-          <div class="card-img yellow">EZ 3 Pro</div>
-          <div class="card-body">
+        <article class="product featured">
+          <div class="product-img dark-bg">
+            <div class="placeholder-img">📱 EZ 3 Pro</div>
+          </div>
+          <div class="product-body">
+            <span class="tag hot">Best Specs</span>
             <h3>Sun King EZ 3 Pro</h3>
-            <p class="card-desc">Made for people who want more</p>
-            <ul class="card-features">
-              <li>50 MP + 8 MP cameras</li>
-              <li>6 GB RAM</li>
-              <li>6000 mAh fast charging</li>
-              <li>128 GB storage</li>
-            </ul>
-            <div class="card-price">
-              <div class="price">From Ksh 65 <small>/day</small></div>
-              <div class="down">Ksh 3,099 deposit</div>
+            <p>50MP • 6GB RAM • 6000mAh • 128GB</p>
+            <div class="price-row">
+              <div>
+                <strong>Ksh 65</strong><span>/day</span>
+                <small>Ksh 3,099 deposit</small>
+              </div>
+              <button class="btn btn-yellow btn-sm">Get It</button>
             </div>
-            <button class="btn btn-primary btn-full">Discover EZ 3 Pro</button>
           </div>
-        </div>
-      </div>
-
-      <div class="more-phones">
-        <p>Also available:</p>
-        <div class="phone-tags">
-          <span>Tecno Pop 10</span>
-          <span>Tecno Spark 40</span>
-          <span>Samsung A06</span>
-          <span>Infinix Smart 10</span>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -378,72 +267,43 @@
   <!-- EasyBuy -->
   <section class="easybuy" id="easybuy">
     <div class="container">
-      <div class="section-head light">
-        <h2>Lipa Pole Pole with EasyBuy</h2>
-        <p>Control your finances. Own your solar.</p>
-      </div>
-
-      <div class="easybuy-grid">
-        <div class="easy-card">
-          <div class="easy-icon">💰</div>
-          <h4>Low Upfront Cost</h4>
-          <p>Small deposit. Take home today.</p>
+      <h2>Lipa Pole Pole</h2>
+      <p class="easy-sub">Small deposit. Daily or weekly payments. Own it.</p>
+      <div class="easy-grid">
+        <div class="easy-item">
+          <span>1</span>
+          <p>Choose product</p>
         </div>
-        <div class="easy-card">
-          <div class="easy-icon">✅</div>
-          <h4>No Hidden Requirements</h4>
-          <p>Simple process. No surprises.</p>
+        <div class="easy-item">
+          <span>2</span>
+          <p>Pay small deposit</p>
         </div>
-        <div class="easy-card">
-          <div class="easy-icon">📱</div>
-          <h4>Pay Your Way</h4>
-          <p>Daily or weekly via M-Pesa or cash.</p>
+        <div class="easy-item">
+          <span>3</span>
+          <p>Take it home</p>
         </div>
-        <div class="easy-card">
-          <div class="easy-icon">🛠️</div>
-          <h4>Technical Support</h4>
-          <p>We've got your back after purchase.</p>
+        <div class="easy-item">
+          <span>4</span>
+          <p>Pay daily / weekly</p>
         </div>
       </div>
-
-      <div class="easybuy-cta">
-        <p>Choose any product → Select EasyBuy → Pay deposit → Enjoy solar power</p>
-        <a href="#home-systems" class="btn btn-primary">Start Shopping</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA -->
-  <section class="final-cta">
-    <div class="container">
-      <h2>Ready for reliable solar power?</h2>
-      <p>Join thousands of Kenyan homes already enjoying Sun King.</p>
-      <div class="hero-buttons">
-        <a href="#home-systems" class="btn btn-dark">Shop Home Systems</a>
-        <a href="#lanterns" class="btn btn-outline-dark">Shop Lanterns</a>
-      </div>
+      <a href="#home" class="btn btn-yellow">Start Shopping</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-top">
-        <div class="logo">
-          <span class="logo-icon">🦁</span>
-          <span class="logo-text">sun king</span>
-        </div>
+      <div class="footer-row">
+        <a href="#" class="logo">🦁 sun king</a>
         <div class="footer-links">
           <a href="#lanterns">Lanterns</a>
-          <a href="#home-systems">Home Systems</a>
+          <a href="#home">Home Systems</a>
           <a href="#inverters">Inverters</a>
           <a href="#phones">Phones</a>
-          <a href="#easybuy">EasyBuy</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Sun King Kenya • Demo store built from public product data</p>
-      </div>
+      <p class="copy">© 2026 Sun King Kenya • Demo</p>
     </div>
   </footer>
 
